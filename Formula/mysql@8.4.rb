@@ -113,7 +113,7 @@ class MysqlAT84 < Formula
       -DWITH_ZSTD=system
       -DWITH_UNIT_TESTS=OFF
       -DWITH_INNODB_MEMCACHED=ON
-      -DWITH_DEBUG=1
+      -DWITH_DEBUG=ON
     ]
 
     system "cmake", "-S", ".", "-B", "build", *args, *std_cmake_args
